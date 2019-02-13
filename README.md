@@ -2,14 +2,14 @@
 
 [![PRs Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](http://makeapullrequest.com) [![made-with-python](https://img.shields.io/badge/made%20with-python-blue.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-Responser is a python package to convert normal strings, objects and other data to REST API response format and to JSON format.
+Responser is a python package to convert normal strings, objects and other data to REST API response convention and in JSON format.
 
 ## Usage
 
 ### `Responser`
 -----------------------------------------
 
-Responser is a python package to convert normal strings, objects and other data to REST API response format and to JSON format.
+Responser is a python package to convert normal strings, objects and other data to REST API response convention and in JSON format.
 
 This function follows the following JSON structure.
 
@@ -18,14 +18,14 @@ This function follows the following JSON structure.
   "status_code": 200,
   "data": {
     "name": "Bharath Kumar Ravichandran",
-    "alma-mater": "NIT Trichy",
+    "alma_mater": "NIT Trichy",
     "languages_known": [
         "Python",
         "PHP",
         "JS",
         "C++"
     ],
-    "cool_guy": True,
+    "cool_guy": "yes",
   },
   "message": "OK"
 }
@@ -51,14 +51,14 @@ from responser import JSONResponser
 status_code = 200
 data = {
     "name": "Bharath Kumar Ravichandran",
-    "alma-mater": "NIT Trichy",
+    "alma_mater": "NIT Trichy",
     "languages_known": [
         "Python",
         "PHP",
         "JS",
         "C++"
     ],
-    "cool_guy": True,
+    "cool_guy": "yes",
 }
 message = "User details returned."
 
@@ -71,14 +71,14 @@ print response
   "status_code": 200,
   "data": {
     "name": "Bharath Kumar Ravichandran",
-    "alma-mater": "NIT Trichy",
+    "alma_mater": "NIT Trichy",
     "languages_known": [
         "Python",
         "PHP",
         "JS",
         "C++"
     ],
-    "cool_guy": True,
+    "cool_guy": "yes",
   },
   "message": "User details returned."
 }
@@ -99,14 +99,14 @@ def sample_function():
 
     data = {
         "name": "Bharath Kumar Ravichandran",
-        "alma-mater": "NIT Trichy",
+        "alma_mater": "NIT Trichy",
         "languages_known": [
             "Python",
             "PHP",
             "JS",
             "C++"
         ],
-        "cool_guy": True,
+        "cool_guy": "yes",
     }
 
     return data
@@ -117,14 +117,14 @@ def sample_function():
   "status_code": 200,
   "data": {
     "name": "Bharath Kumar Ravichandran",
-    "alma-mater": "NIT Trichy",
+    "alma_mater": "NIT Trichy",
     "languages_known": [
         "Python",
         "PHP",
         "JS",
         "C++"
     ],
-    "cool_guy": True,
+    "cool_guy": "yes",
   },
   "message": "OK"
 }
